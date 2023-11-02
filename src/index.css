@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-mobile {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/dikda-3b694.appspot.com/o/files%2Fmobile-hero.png?alt=media&token=bc31d2e3-32e7-4cb1-960a-7eb58d8fe687);
+  background-repeat: no-repeat;
+}
+
+.hero-tablet {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/dikda-3b694.appspot.com/o/files%2Ftablet-hero.png?alt=media&token=bc31d2e3-32e7-4cb1-960a-7eb58d8fe687);
+  background-repeat: no-repeat;
+}
+
+.hero {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/dikda-3b694.appspot.com/o/files%2Fhero.jpg?alt=media&token=6a15cc31-4dd5-45dc-9d79-44cf8f52d3d6);
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.custom-border-bottom {
+  border-bottom: 2px solid rgb(206, 206, 206);
+}
+
+.sub-links {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.sop-layanan:hover .sub-links {
+  display: block;
+}
+
+.active {
+  color: #cf2300;
+  font-weight: bold;
+  border-bottom: solid #cf2300;
+  padding-bottom: 5px;
+  transition: color 0.3s ease, font-weight 0.3s ease, border-bottom 0.3s ease,
+    padding-bottom 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.btn-primary {
+  @apply text-white bg-red-600 border-red-600 hover:border-red-700 hover:bg-red-700;
+}

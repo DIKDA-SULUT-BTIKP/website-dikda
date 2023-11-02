@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  dikda-app:
+    image: ywauran/dikda-sulut:v1
+    ports:
+      - 80:5000
+
+    restart: always
