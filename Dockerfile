@@ -1,17 +1,20 @@
-# Menggunakan base image Node.js versi 14
-FROM node:18
+# Use an official Node runtime as the base image
+FROM node:16.18.0
 
-# Menentukan working directory untuk container
+# Set the working directory in the container
 WORKDIR /app
 
-# Menyalin seluruh source code ke working directory di container
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+
+# Install Node.js dependencies
+RUN npm install
+
+# Copy the entire React app to the container
 COPY . .
 
-# Menginstal dependencies untuk production dan kemudian build aplikasi
-RUN npm install --production --unsafe-perm && npm run build
+# Expose the port the app runs on
+EXPOSE 3000
 
-# Ekspos port yang digunakan oleh aplikasi (8080)
-EXPOSE 5000
-
-# Saat container diluncurkan, jalankan server dengan perintah npm start
+# Start the React application
 CMD ["npm", "start"]
