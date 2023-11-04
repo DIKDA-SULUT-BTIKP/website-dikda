@@ -7,10 +7,13 @@
 .hero-mobile {
   background-image: url(https://firebasestorage.googleapis.com/v0/b/dikda-3b694.appspot.com/o/files%2Fmobile-hero.png?alt=media&token=bc31d2e3-32e7-4cb1-960a-7eb58d8fe687);
   background-repeat: no-repeat;
+  width: 100%; /* Lebar penuh */
+  position: relative; /* Untuk mengatur posisi */
+  left: 0; /* Memastikan elemen dimulai dari kiri tepi layar */
 }
 
 .hero-tablet {
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/dikda-3b694.appspot.com/o/files%2Ftablet-hero.png?alt=media&token=bc31d2e3-32e7-4cb1-960a-7eb58d8fe687);
+  background-image: url("../src/assets/tablet-hero.png");
   background-repeat: no-repeat;
 }
 

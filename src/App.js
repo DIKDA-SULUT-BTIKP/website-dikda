@@ -24,7 +24,6 @@ const App = () => {
           <Route path="/sop/detail/:title" element={<DetailSOPPage />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
-        <Contact />
       </main>
       <Footer />
     </>

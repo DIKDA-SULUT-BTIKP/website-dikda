@@ -9,15 +9,15 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <section>
+      <section className="mt-4 ">
         <div className="flex flex-col-reverse items-center justify-center space-x-6 md:flex-md">
-          <h5 className="text-2xl font-bold text-[#333333]">
+          <h5 className="text-2xl font-bold text-[#333333] text-center">
             Kepala Dinas Pendidikan Sulawesi Utara
           </h5>
           <img src={Kadis} alt="Ibu Kadis" className="p-4 shadow w-80 h-96 " />
         </div>
       </section>
-      <section>
+      <section className="mt-4">
         <div className="p-16 md:p-8">
           <h3 className="text-3xl font-bold">Berita</h3>
           <div className="grid grid-cols-1 gap-4 p-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
